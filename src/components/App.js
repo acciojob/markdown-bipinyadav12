@@ -15,7 +15,7 @@ function App() {
     text = text.replace(/^#\s(.*$)/gim, "<h1>$1</h1>");
     text = text.replace(/^##\s(.*$)/gim, "<h2>$1</h2>");
     text = text.replace(/^###\s(.*$)/gim, "<h3>$1</h3>");
-    text = text.replace(/\*\*(.*?)\*\*/gim, "<b>$1</b>");
+    text = text.replace(/\*\*(.*?)\*\*/gim, "<strong>$1</strong>");
     text = text.replace(/\*(.*?)\*/gim, "<i>$1</i>");
     text = text.replace(/\[(.*?)\]\((.*?)\)/gim, '<a href="$2" target="_blank">$1</a>');
     text = text.replace(/\n/gim, "<br>");
